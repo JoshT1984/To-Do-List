@@ -1,0 +1,18 @@
+<%-include("header");%>
+<section id="Main">
+  <div class="container new">
+    <h1><%=today%></h1>
+    <form action="/" method="post">
+      <input
+        class="to-do-item"
+        type="text"
+        name="listItem"
+        placeholder="New Item"
+        autocomplete="off"
+        required
+      />
+      <button>Add</button>
+    </form>
+  </div>
+</section>
+<%-include("footer");%>

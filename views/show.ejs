@@ -1,0 +1,17 @@
+<%- include("header"); -%>
+
+<!-- Main-Content Section -->
+
+<section id="Main">
+  <div class="container">
+    <p class = "addItem">Your "<%=itemID.addItem%>" id # is : <b><%=itemID.id%></b></p>
+    <p class = "back"><a href="/">Back to list</a></p>
+    <p><a href="/<%=itemID.id%>/edit">Edit</a></p>
+
+    <form action="/<%=itemID.id%>?_method=DELETE" method = "post">
+      <button>Delete</button>
+    </form>
+</div>
+</section>
+
+<%- include("footer"); -%>

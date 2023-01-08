@@ -1,0 +1,24 @@
+<%-include("header");%>
+<section id="Title">
+  <div class="container">
+    <h1><%=currentDay%></h1>
+  </div>
+</section>
+
+<section id="Main">
+  <div class="container index">
+    <% for(let item of newListItem){%>
+    <ul>
+      <li>
+        <input type="checkbox" /><span class="strikethrough"
+          ><%=item.addItem%></span
+        >
+        <a class="hyperlink" href="/<%=item.id%>"> details</a>
+      </li>
+    </ul>
+    <%}%>
+    <p class ="addItem"><a href="/new">Add Item</a></p>
+  </div>
+</section>
+
+<%-include("footer");%>

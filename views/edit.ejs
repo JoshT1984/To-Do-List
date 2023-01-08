@@ -1,0 +1,12 @@
+<%- include("header"); -%>
+<!-- Main-Content Section -->
+<section id="Main">
+  <div class="container text-area">
+    <form method="post" action="/<%=itemID.id%>?_method=PATCH"><textarea class="editBox"name="item"id=""cols="30"rows="10"required><%=itemID.addItem%></textarea>
+      <br />
+      <button>Update</button>
+    </form>
+  </div>
+</section>
+
+<%- include("footer"); -%>
